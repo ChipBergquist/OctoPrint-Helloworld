@@ -1,0 +1,6 @@
+cd ~/devel && cd OctoPrint && virtualenv venv && source venv/bin/activate
+deactivate
+octoprint serve
+
+cd ~/devel/OctoPrint-Helloworld
+octoprint dev plugin:install

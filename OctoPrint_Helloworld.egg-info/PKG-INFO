@@ -1,10 +1,10 @@
 Metadata-Version: 1.0
 Name: OctoPrint-Helloworld
-Version: 9.9.9
-Summary: TODO
-Home-page: https://github.com/you/OctoPrint-Helloworld
-Author: You
-Author-email: you@example.com
+Version: 0.0.3
+Summary: A test OctoPrint plugin.
+Home-page: https://github.com/ChipBergquist/OctoPrint-Helloworld
+Author: Chip Bergquist
+Author-email: cmbergquist@gmail.com
 License: AGPLv3
 Description: UNKNOWN
 Platform: UNKNOWN

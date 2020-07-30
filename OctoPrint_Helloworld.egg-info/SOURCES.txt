@@ -9,3 +9,7 @@ OctoPrint_Helloworld.egg-info/not-zip-safe
 OctoPrint_Helloworld.egg-info/requires.txt
 OctoPrint_Helloworld.egg-info/top_level.txt
 octoprint_helloworld/__init__.py
+octoprint_helloworld/static/js/helloworld.js
+octoprint_helloworld/templates/helloworld_navbar.jinja2
+octoprint_helloworld/templates/helloworld_settings.jinja2
+octoprint_helloworld/templates/helloworld_tab.jinja2
