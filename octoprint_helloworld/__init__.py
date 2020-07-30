@@ -1,4 +1,10 @@
 # -*- coding: utf-8 -*-
+#
+# The main entry point to the plugin.
+#
+# 2020-07-29 - Initial version.
+# 2020-07-30 - Comments, header, test GitHub.
+#
 from __future__ import absolute_import, unicode_literals
 
 import octoprint.plugin
@@ -8,7 +14,7 @@ class HelloWorldPlugin(octoprint.plugin.StartupPlugin,
                        octoprint.plugin.SettingsPlugin,
                        octoprint.plugin.AssetPlugin):
     def on_after_startup(self):
-        self._logger.info("Hello World! (more: %s)" % self._settings.get(["url"]))
+        self._logger.info("Change - Hello World! (more: %s)" % self._settings.get(["url"]))
 
     def get_settings_defaults(self):
         return dict(url="https://en.wikipedia.org/wiki/Hello_world")
@@ -24,6 +30,6 @@ class HelloWorldPlugin(octoprint.plugin.StartupPlugin,
             js=["js/helloworld.js"]
         )
 
-__plugin_name__ = "Hello World"
+__plugin_name__ = "Change - Hello World"
 __plugin_pythoncompat__ = ">=2.7,<4"
 __plugin_implementation__ = HelloWorldPlugin()
