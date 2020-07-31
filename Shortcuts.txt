@@ -4,3 +4,13 @@ octoprint serve
 
 cd ~/devel/OctoPrint-Helloworld
 octoprint dev plugin:install
+
+ ~/oprint/bin/octoprint --help
+tail -f ~/.octoprint/logs/octoprint.log
+
+pi@CNCCamera:~/.octoprint/plugins/OctoPrint-Helloworld $ git clone https://github.com/ChipBergquist/OctoPrint-Helloworld.git
+
+pi@CNCCamera:~/.octoprint/plugins/OctoPrint-Helloworld $  ~/oprint/bin/octoprint dev plugin:install
+pi@CNCCamera:~/.octoprint/plugins/OctoPrint-Helloworld $ tail -f ~/.octoprint/logs/octoprint.log
+pi@CNCCamera:~/.octoprint/plugins/OctoPrint-Helloworld $ tail -f ~/.octoprint/logs/octoprint.log | grep helloworld
+
