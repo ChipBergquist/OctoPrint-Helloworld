@@ -8,6 +8,8 @@
 #
 from __future__ import absolute_import, unicode_literals
 
+import json
+
 import octoprint.events
 import octoprint.plugin
 
@@ -34,17 +36,13 @@ class HelloWorldPlugin(octoprint.plugin.EventHandlerPlugin,
         )
     
     def on_event(self, event, payload):
-        if event == octoprint.events.Events.UPLOAD:
-            self._logger.info("File Uploaded: %s" % payload["file"])
-
-        elif event == octoprint.events.Events.CLIENT_OPENED:
-            self._logger.info("File Uploaded: %s" % payload["remoteAddress"])
-
-        else:
-            self._logger.info("Unhandled Event: %s" % event)
+        self._logger.info('Event: {0} - {1}'.format(event, json.dumps(payload)))
 
 
+    def custom_atcommand_handler(self, comm, phase, command, parameters, tags=None, *args, **kwargs):
+        self._logger.info('Command: {0}'.format(command))
 
 __plugin_name__ = "CNC Camera"
 __plugin_pythoncompat__ = ">=2.7,<4"
 __plugin_implementation__ = HelloWorldPlugin()
+__plugin_hooks__ = {"octoprint.comm.protocol.atcommand.queuing": __plugin_implementation__.custom_atcommand_handler}

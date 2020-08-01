@@ -8,7 +8,7 @@
 plugin_identifier = "helloworld"
 plugin_package = "octoprint_helloworld"
 plugin_name = "OctoPrint-Helloworld"
-plugin_version = "0.0.3"
+plugin_version = "0.0.4"
 plugin_description = "A test OctoPrint plugin."
 plugin_author = "Chip Bergquist"
 plugin_author_email = "cmbergquist@gmail.com"

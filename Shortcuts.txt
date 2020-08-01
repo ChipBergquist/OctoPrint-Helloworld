@@ -4,3 +4,13 @@ octoprint serve
 
 cd ~/devel/OctoPrint-Helloworld
 octoprint dev plugin:install
+octoprint dev plugin:uninstall OctoPrint-Helloworld
+
+git status
+git add .
+git commit -m "Commit Comment"
+git push
+
+git clone https://github.com/ChipBergquist/OctoPrint-Helloworld.git
+
+tail -f ~/.octoprint/logs/octoprint.log | grep --line-buffered helloworld
